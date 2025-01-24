@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_theme.dart';
@@ -88,6 +89,10 @@ class EnergyRatingMain extends StatelessWidget {
                                     CustomSlider(
                                       sliderValue: state.sliderValue,
                                       onSliderValueChange: (value) {
+                                        // Trigger haptic feedback
+                                        HapticFeedback.lightImpact();
+
+                                        // Update the slider value in the cubit
                                         context.read<EnergyCubit>().updateSliderValue(value);
                                       },
                                     ),
