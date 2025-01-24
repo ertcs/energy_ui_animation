@@ -1,0 +1,53 @@
+name: ui_animation
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_bloc: ^9.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  uses-material-design: true
+
+#  assets:
+#    - images/a_dot_burr.jpeg
+#    - images/a_dot_ham.jpeg
+
+
+  fonts:
+    - family: PPNeueMontreal
+      fonts:
+        - asset: assets/fonts/ppneuemontreal-thin.otf
+          weight: 100
+        - asset: assets/fonts/ppneuemontreal-book.otf
+          weight: 400
+        - asset: assets/fonts/ppneuemontreal-medium.otf
+          weight: 500
+        - asset: assets/fonts/ppneuemontreal-bold.otf
+          weight: 700
+        - asset: assets/fonts/ppneuemontreal-italic.otf
+          style: italic
+        - asset: assets/fonts/ppneuemontreal-semibolditalic.otf
+          style: italic
+          weight: 600
+
